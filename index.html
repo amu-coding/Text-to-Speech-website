@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Speech</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Audionix | Text to Speech</title>
+    <link rel="icon" href="uploads/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <main class="main flex">
+
+        <!-- Left Side Nav Bar Section -->
         <section class="menubar flex">
             <div class="menubar-box flex">
                 <div class="logo-box">
@@ -18,7 +21,7 @@
                     </a>
                 </div>
                 <div class="navbar flex">
-                    <a href="#" class="navbar-item"><i class="fas fa-house nav-icons"></i> Home</a>
+                    <a href="index.html" class="navbar-item"><i class="fas fa-house nav-icons"></i> Home</a>
                     <a href="#" class="navbar-item"><i class="fas fa-music nav-icons"></i> Music</a>
                     <a href="#" class="navbar-item"><i class="fas fa-film nav-icons"></i> Footage</a>
                     <a href="#" class="navbar-item"><i class="fas fa-volume-up nav-icons"></i> Sound Effects</a>
@@ -30,17 +33,40 @@
             </div>
         </section>
 
+
+
+        <!-- Body of The Website -->
         <section class="body-content flex">
             <div class="body-content-box flex">
+
+                <!-- Sticky Header Section -->
                 <div class="header-cta flex">
                     <a href="#" class="start-free-cta">Start Free Now</a>
                     <a href="#" class="header-links">Business</a>
                     <a href="#" class="header-links">Pricing</a>
                     <a href="#" class="header-links">Sign In</a>
                 </div>
+
+                <!-- Hero Video and Description -->
+                <div class="hero-vid conatainer">
+                    <video autoplay muted loop playsinline>
+                        <source src="uploads/hero video 1.mp4" type="video/mp4">
+                    </video>
+                    <div class="hero-content flex">
+                        <h1>AI Voice Generator Made for Video Creators</h1>
+                        <p>
+                            Find your unique voice using our top-tier AI text-to-speech generator, with exclusive talent from Audionix.
+                        </p>
+                        <div class="flex">
+                            <a href="#" class="start-free-cta hero-cta">Start Free Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+
+    <!-- Javascript File Connection -->
+    <script src="js/script.js"></script>
 </body>
 </html>
