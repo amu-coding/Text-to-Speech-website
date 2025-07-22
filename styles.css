@@ -4,6 +4,7 @@
     --ternary-bg: #252525;
     --text: #B2B2B2;
     --heading: #fff;
+    --accent: #FFDA2A;
 }
 
 * {
@@ -38,16 +39,27 @@ body {
 
 .main {
     width: 100%;
+    justify-content: space-between;
 }
 
-.menubar {
-    height: 100%;
+.menubar-box {
+    height: 100vh;
     width: 20%;
     background-color: var(--secondary-bg);
     flex-direction: column;
-    gap: 1rem;
-    padding: 20px;
+    position: fixed;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--ternary-bg) var(--secondary-bg);
+}
+
+.logo-box {
     position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    width: 100%;
 }
 
 #logo {
@@ -56,8 +68,9 @@ body {
 
 .navbar {
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     gap: 1rem;
+    padding: 20px;
 }
 
 .navbar-item {
@@ -65,7 +78,7 @@ body {
     color: var(--text);
     font-weight: 300;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.3s ease;
     font-size: 1rem;
 }
@@ -79,4 +92,50 @@ body {
     color: var(--text);
     margin-right: 10px;
     font-size: 1rem;
+}
+
+.body-content {
+    width: 80%;
+    justify-content: center;
+}
+
+.body-content-box {
+    flex-direction: column;
+    width: 90%;
+}
+
+.header-cta {
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    gap: 1.5rem;
+}
+
+.start-free-cta {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    background-color: var(--accent);
+    color: #333;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.start-free-cta:hover {
+    background-color: var(--ternary-bg);
+    color: var(--text);
+}
+
+.header-links {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+
+.header-links:hover {
+    color: var(--heading);
 }
