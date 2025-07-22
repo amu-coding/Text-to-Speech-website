@@ -1,0 +1,55 @@
+:root {
+    --primary-color: #FFDA2A;
+    --secondary-color: #111;
+    --text: #E6E6E6;
+    --heading: #fff;
+}
+
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--secondary-color);
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main {
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-box {
+    width: 80%;
+}
+
+#textarea {
+    height: 80px;
+    width: 60%;
+    color: var(--text);
+    background-color: #292929;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    margin: 20px 0px;
+}
