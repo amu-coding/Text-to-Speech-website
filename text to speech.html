@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audionix | Convert Text</title>
+     <link rel="icon" href="uploads/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/text to speech.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header Bar Section -->
+    <section class="header-bar-section flex">
+        <div class="header-bar-80 flex">
+            <div class="header-bar-90 flex">
+                <h1 id="tts-title">Simple Text to Speech Conversion - Fast and Easy</h1>
+                <div class="body-content-box">
+                    <div class="img-box flex">
+                        <img src="uploads/tts image.jpg" alt="img" id="tts-img">
+                    </div>
+                    <div class="text-input-box flex">
+                        <textarea placeholder="Type or Paste Your Text Here..." id="text-input" rows="6"></textarea>
+                        <div class="input-btn-box flex">
+                            <div class="lang-box flex">
+                                <select name="language" id="language">
+                                    <option value="english" selected>English</option>
+                                    <option value="french">French</option>
+                                    <option value="german">German</option>
+                                    <option value="spanish">Spanish</option>
+                                    <option value="turkish">Turkish</option>
+                                </select>
+                                <select name="sound" id="sound">
+                                    <option value="male-sound" selected>Male Sound</option>
+                                    <option value="female-sound">Female Sound</option>
+                                </select>
+                            </div>
+                            <div class="speech-btn-box">
+                                <button id="tts-btn">Convert to Speech</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
