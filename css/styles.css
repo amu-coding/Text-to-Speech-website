@@ -98,11 +98,11 @@ body {
     font-size: 1rem;
 }
 
-.hero-cta {
+#hero-cta {
     background-color: var(--heading);
     color: var(--dark-text);
 }
 
-.hero-cta:hover {
+#hero-cta:hover {
     background-color: var(--text);
 }

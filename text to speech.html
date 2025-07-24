@@ -4,18 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audionix | Convert Text</title>
-     <link rel="icon" href="uploads/icon.png" type="image/png">
+    <link rel="icon" href="uploads/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/header bar.css">
     <link rel="stylesheet" href="css/text to speech.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- Left Side Nav Bar Section -->
+    <section class="header-section">
+        <div class="menubar flex">
+            <div class="menubar-box flex">
+                <div class="logo-box">
+                    <a href="index.html">
+                    <img src="uploads/logo.png" alt="site logo" id="logo"> 
+                    </a>
+                </div>
+                <div class="navbar flex">
+                    <a href="index.html" class="navbar-item"><i class="fas fa-house nav-icons"></i> Home</a>
+                    <a href="text to speech.html" class="navbar-item"><i class="fas fa-file-alt nav-icons"></i> Convert Text</a>
+                    <a href="#" class="navbar-item"><i class="fas fa-microphone nav-icons"></i> Voice Options</a>
+                    <a href="#" class="navbar-item"><i class="fas fa-globe nav-icons"></i> Supported Languages</a>
+                    <a href="#" class="navbar-item"><i class="fas fa-cog nav-icons"></i> Settings</a>
+                    <a href="#" class="navbar-item"><i class="fas fa-question-circle nav-icons"></i> Help</a>
+                    <a href="#" class="navbar-item"><i class="fas fa-info-circle nav-icons"></i> About Us</a>
+                    <a href="#" class="navbar-item"><i class="fas fa-envelope nav-icons"></i> Contact</a>
+                </div>
+            </div>
+        </div> 
+    </section>
+
     <!-- Header Bar Section -->
     <section class="header-bar-section flex">
         <div class="header-bar-80 flex">
             <div class="header-bar-90 flex">
+                <!-- Sticky Header Section -->
+                <div class="header-cta flex">
+                    <a href="text to speech.html" class="start-free-cta">Start Free Now</a>
+                    <a href="#" class="header-links">Business</a>
+                    <a href="#" class="header-links">Pricing</a>
+                    <a href="#" class="header-links">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text To Speech Page -->
+    <section class="tts-section flex">
+        <div class="tts-div-80 flex">
+            <div class="tts-div-90 flex">
                 <h1 id="tts-title">Simple Text to Speech Conversion - Fast and Easy</h1>
-                <div class="body-content-box">
+                <div class="tts-content-box">
                     <div class="img-box flex">
                         <img src="uploads/tts image.jpg" alt="img" id="tts-img">
                     </div>
@@ -24,26 +65,46 @@
                         <div class="input-btn-box flex">
                             <div class="lang-box flex">
                                 <select name="language" id="language">
-                                    <option value="english" selected>English</option>
-                                    <option value="french">French</option>
-                                    <option value="german">German</option>
-                                    <option value="spanish">Spanish</option>
-                                    <option value="turkish">Turkish</option>
-                                </select>
-                                <select name="sound" id="sound">
-                                    <option value="male-sound" selected>Male Sound</option>
-                                    <option value="female-sound">Female Sound</option>
+                                    <option value="en" selected>English</option>
+                                    <option value="fr">French</option>
+                                    <option value="de">German</option>
+                                    <option value="es">Spanish</option>
+                                    <option value="tr">Turkish</option>
                                 </select>
                             </div>
                             <div class="speech-btn-box">
-                                <button id="tts-btn">Convert to Speech</button>
+                                <button id="tts-btn"><i class="fas fa-volume-up tts-icon"></i> Convert to Speech</button>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Body of The Home Page -->
+    <section class="main flex" style="padding: 30px 0px;">
+        <div class="body-content flex">
+            <div class="body-content-box flex">
+                <div class="hero-vid conatainer">
+                    <video autoplay muted loop playsinline>
+                        <source src="uploads/hero video.mp4" type="video/mp4">
+                    </video>
+                    <div class="hero-content flex">
+                        <h1>Voice Generator Made<br>for Video Creators</h1>
+                        <p>
+                            Find your unique voice using our top-tier text-to-speech generator,<br>with exclusive talent from Audionix.
+                        </p>
+                        <div class="flex">
+                            <a href="#" class="start-free-cta" id="hero-cta">Start Free Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Javascript File Link -->
+    <script src="js/text to speech.js"></script>
 </body>
 </html>
