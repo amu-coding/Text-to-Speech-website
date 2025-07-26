@@ -4,9 +4,9 @@ function loadVoices() {
   voices = speechSynthesis.getVoices();
   console.log("Available voices:", voices);
   
-  // Populate the dropdown with available voices
+
   const voiceSelect = document.getElementById("language");
-  voiceSelect.innerHTML = ''; // Clear existing options
+  voiceSelect.innerHTML = '';
   
   voices.forEach((voice, index) => {
     const option = document.createElement('option');
@@ -16,10 +16,9 @@ function loadVoices() {
   });
 }
 
-// Load voices when the page loads
+
 speechSynthesis.onvoiceschanged = loadVoices;
 
-// Also try to load voices immediately in case they're already available
 if (speechSynthesis.getVoices().length > 0) {
   loadVoices();
 }
@@ -35,10 +34,6 @@ ttsBtn.addEventListener("click", () => {
     return;
   }
 
-  if (voices.length === 0) {
-    alert("No voices available. Please wait for voices to load.");
-    return;
-  }
 
   const selectedVoice = voices[selectedVoiceIndex];
   
