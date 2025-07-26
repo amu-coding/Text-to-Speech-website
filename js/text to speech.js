@@ -1,4 +1,3 @@
-// Loading the available languages of the browser
 let voices = [];
 
 function loadVoices() {
@@ -9,7 +8,6 @@ function loadVoices() {
 speechSynthesis.onvoiceschanged = loadVoices;
 
 
-// Setting the behavior of "conver to speech" button
 var ttsBtn = document.getElementById("tts-btn");
 
 ttsBtn.addEventListener("click", () => {
@@ -31,8 +29,7 @@ ttsBtn.addEventListener("click", () => {
   }
 
   const utterance = new SpeechSynthesisUtterance(text);
-  utterance.voice = matchingVoices[0]; // pick the first matching voice
+  utterance.voice = matchingVoices[0];
 
   speechSynthesis.speak(utterance);
 });
-
